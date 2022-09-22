@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"
+        ></script>
+        <title>Registration</title>
+    </head>
+    <body>
+        <div class="container d-flex justify-content-center p-5">
+            <div class="card w-50">
+                <div class="card-header">
+                    <h2>Registration</h2>
+                </div>
+                <div class="card-body">
+                    <input
+                        id="name"
+                        type="text"
+                        class="form-control"
+                        placeholder="Name"
+                    />
+                    <div class="mt-2 d-flex">
+                        <input
+                            id="phoneCheck"
+                            name="type"
+                            type="radio"
+                            class="form check-input"
+                        />
+                        <input
+                            id="phone"
+                            type="number"
+                            class="form-control ms-2"
+                            placeholder="phone"
+                        />
+                    </div>
+                    <div class="mt-2 d-flex">
+                        <input
+                            id="emailCheck"
+                            name="type"
+                            type="radio"
+                            class="form check-input"
+                        />
+                        <input
+                            id="email"
+                            type="email"
+                            class="form-control ms-2"
+                            placeholder="email"
+                        />
+                    </div>
+                    <input
+                        type="password"
+                        id="password"
+                        class="form-control mt-3"
+                        placeholder="password"
+                    />
+                    <input
+                        type="date"
+                        id="birthday"
+                        class="form-control mt-3"
+                        placeholder="password"
+                    />
+                </div>
+                <div class="card-footer">
+                    <button
+                        class="btn btn-success w-100"
+                        id="register"
+                    >
+                        Register
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
